@@ -1,0 +1,145 @@
+/*simple selctors*/
+* {
+    text-align: center;
+    color: rgb(22, 22, 233);
+}
+
+#para1 {
+    text-align: center;
+    color: red;
+}
+
+p {
+    text-align: center;
+    background-color: rgb(157, 73, 236);
+}
+
+.center {
+    text-align: center;
+    background-color: rgb(218, 40, 164);
+}
+
+p.center {
+    text-align: center;
+    color: rgb(219, 32, 147);
+}
+
+p,h2 {
+    font-size: 200%;
+}
+
+/* combinator selectors*/
+div p {
+    background-color: yellow;
+}
+
+div>p {
+    color: chartreuse;
+}
+
+div+p {
+    color: black;
+}
+
+div~p {
+    background-color: aqua;
+}
+
+a:link {
+    color: red;
+}
+
+/*pseudo-classes*/
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+a.highlight:hover {
+    color: #ff0000;
+    font-size: 22px;
+}
+
+div:hover {
+    background-color: blue;
+}
+
+h6 {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div.hover h6 {
+    display: block;
+}
+
+p:first-child {
+    color: #ff0000;
+}
+
+p i:first-child {
+    color: pink;
+}
+
+h5:first-child i {
+    color: orangered;
+}
+
+q:lang(gowri) {
+    quotes: "~""?&";
+}
+
+/*pseudo-elements*/
+h4::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+h5.intro::first-letter {
+    color: #ff0000;
+    font-size: 200%;
+}
+
+h2::before {
+    content: "Hi ";
+    color: aqua;
+}
+
+h2::after {
+    content: " WoW!";
+    color: aqua;
+}
+
+::marker {
+    color: red;
+    font-size: 13px;
+}
+
+h3::selection {
+    color: red;
+    background: yellow;
+}
+
+a[target] {
+    background-color: yellow;
+}
+
+[class|=intro] {
+    background: rgb(154, 113, 219);
+}
